@@ -6,6 +6,7 @@ class SpotifyAPI:
         self.client_id = client_id
         self.client_secret = client_secret
         self.access_token = access_token or self.get_access_token()
+        
     def get_access_token(self):
         auth_url = 'https://accounts.spotify.com/api/token'
         data = {
